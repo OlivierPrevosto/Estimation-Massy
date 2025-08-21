@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estimation Gratuite - Olivier Prevosto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #ed1651;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 2rem;
+      padding: 1rem;
+      font-size: 1rem;
+      background-color: #ed1651;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #c41345;
+    }
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Estimez votre bien à Massy</h1>
+    <p>Recevez une estimation gratuite et confidentielle avec Olivier Prevosto, votre conseiller immobilier local</p>
+  </header>
+  <div class="container">
+    <form action="#" method="post">
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="telephone">Téléphone</label>
+      <input type="tel" id="telephone" name="telephone" required>
+
+      <label for="adresse">Adresse du bien</label>
+      <input type="text" id="adresse" name="adresse" required>
+
+      <label for="type">Type de bien</label>
+      <select id="type" name="type">
+        <option value="maison">Maison</option>
+        <option value="appartement">Appartement</option>
+        <option value="terrain">Terrain</option>
+        <option value="autre">Autre</option>
+      </select>
+
+      <label for="surface">Surface approximative (m²)</label>
+      <input type="number" id="surface" name="surface">
+
+      <label for="projet">Quel est votre projet ?</label>
+      <select id="projet" name="projet">
+        <option value="vente_rapide">Vente immédiate</option>
+        <option value="reflexion">Je réfléchis à vendre</option>
+        <option value="succession">Bien issu d'une succession</option>
+        <option value="investissement">Projet d'investissement</option>
+      </select>
+
+      <button type="submit">Recevoir mon estimation</button>
+    </form>
+    <div class="footer">
+      Olivier Prevosto - Propriétés-Privées.com | Massy (91)<br>
+      "Votre projet mérite un professionnel du terrain… sur le terrain"
+    </div>
+  </div>
+</body>
+</html>
